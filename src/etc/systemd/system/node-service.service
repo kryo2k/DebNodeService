@@ -1,0 +1,15 @@
+[Unit]
+Description=NodeJS Service Package Demo
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=nodejs
+WorkingDirectory=/run/node-service
+ExecStart=/usr/bin/env npm start
+
+[Install]
+WantedBy=multi-user.target

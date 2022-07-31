@@ -1,0 +1,8 @@
+#!/bin/sh
+
+systemctl stop node-service
+systemctl disable node-service
+
+cd /run/node-service
+
+rm -rf node_modules package-lock.json
