@@ -35,7 +35,11 @@ Thank you for visiting.
 ## Make scripts
 
 `make build` - Converts contents of the `src/` directory into an installable `.deb` package.
+
 `make clean` - Removes previously created `.deb` file
+
 `make install` - Installs a previously created `.deb` file (requires root)
+
 `make uninstall` - Uninstalls a previously installed `.deb` file (requires root)
+
 `make all` - Cleans any existing `.deb` file and creates a new one.
