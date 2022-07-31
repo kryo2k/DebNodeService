@@ -1,0 +1,6 @@
+Package: node-service
+Version: 1.0.0
+Maintainer: Hans Doller <kryo2k@gmail.com>
+Architecture: all
+Description: This is a test application to experiment with deb installers.
+Depends: nodejs (>= 12.22.0), npm (>= 8.5.0)

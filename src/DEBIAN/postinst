@@ -1,0 +1,10 @@
+#!/bin/sh
+
+adduser --quiet --system --no-create-home --home /run/node-service --shell /usr/sbin/nologin nodejs
+
+cd /run/node-service
+
+npm install
+
+systemctl enable node-service
+systemctl start node-service
